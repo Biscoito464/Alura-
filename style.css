@@ -1,0 +1,127 @@
+:root {
+    --cor-escrita: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-botao: #167BF7;
+    --cor-backgroud: #00030C;
+    --font-principal: 'Inter';
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background-color: var(--cor-backgroud);
+    color: var(--cor-escrita);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+.inicio{
+    background-image: url("./img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.container__titulo{
+    font-size: 28px;
+}
+.container__img{
+    margin: 1em 0 2em 0;
+}
+.container__botao {
+    display: block;
+    background-color: var(--cor-botao);
+    color: var(--cor-escrita);
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.container__botao:hover{
+    color: var(--cor-backgroud);
+    background-color: var(--cor-botao);
+}
+.botao__secundario{
+    color: var(--cor-escrita);
+    background-color: transparent;
+    border: 2px solid var(--cor-botao);
+}
+.container__aviso{
+    font-size: 12px;
+    color: var(--cor-secundaria);
+}
+.img__secundario{
+    width: 80%;
+}
+.secundario{
+    align-items: center;
+    margin: 0 6em;
+}
+.container__titulo__secundario{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-escrita);
+    margin-bottom: 0.3rem;
+}
+.container__descricao__texto{
+    color: var(--cor-secundaria);
+}
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao{
+    padding: 2em;
+}
+.dispositivos{
+    text-align: center;
+}
+.dispositivos__titulo{
+    font-size: 3rem;
+}
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+.lista__item{
+    font-size: 1.5rem;
+    color: var(--cor-escrita);
+}
+.footer{
+    text-align: center;
+    margin: 5em 3em;
+}
+.footer__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+.lista__link a{
+    text-decoration: none;
+    color: var(--cor-escrita);
+    margin-left: 1em;
+}
+.lista__link a:hover{
+    color: var(--cor-botao);
+}
+.lista__link a:active{
+    color: yellow;
+}
+.footer__texto{
+    margin: 1em 0;
+    color: var(--cor-secundaria);
+    font-size: 14px;
+}
